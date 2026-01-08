@@ -5,7 +5,7 @@ import hash from 'hash.js';
 import crypto from "crypto";
 import fs from "fs";
 // Hàm chuyển buffer sang mảng bit
-import {bufferToBits} from "./utils/bufferToBits.js";
+import {bufferToBits} from "./bufferToBits.js";
 
 
 
