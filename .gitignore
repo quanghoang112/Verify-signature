@@ -1,0 +1,15 @@
+# Chặn toàn bộ thư mục (kết thúc bằng dấu /)
+node_modules/
+build/
+dist/
+checkHashing/
+
+# Chặn các file rác phát sinh khi biên dịch Circom
+*.r1cs
+*.sym
+*.wasm
+*.zkey
+
+# Chặn file cấu hình nhạy cảm hoặc file input lớn
+input.json
+debug_poseidon.json
