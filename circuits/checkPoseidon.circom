@@ -1,7 +1,7 @@
 pragma circom 2.0.0;
 
-include "../circom-rsa-verify/circomlib/circuits/poseidon.circom";
-include "../circom-rsa-verify/circomlib/circuits/comparators.circom";
+include "./circomlib/circuits/poseidon.circom";
+include ".circomlib/circuits/comparators.circom";
 
 template Division(n) {
     signal input dividend;
@@ -9,7 +9,7 @@ template Division(n) {
     signal output quotient;
     signal output remainder;
 
-    // 1. Tính toán giá trị (Sử dụng toán tử không ràng buộc <--)
+    // 1. Tính toán giá trị
     quotient <-- dividend \ divisor; 
     remainder <-- dividend % divisor;
 
